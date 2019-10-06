@@ -6,5 +6,20 @@ function product($x, $y) {
     return $z;
 }
 
-echo "<td>" . product(9, 3) . "</td>";
+function countNum()
+{
+  for ($i = 1; $i <= 100; $i++)
+  {
+    echo "<tr>";
+    for ($j = 1; $j <= 100; $j++)
+    {
+      echo "<td>" . product($i, $j) . "</td>";
+    }
+    echo "</tr>";
+  }
+}
+
+echo "<table>";
+echo countNum();
+echo "</table>";
 ?>
