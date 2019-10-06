@@ -45,7 +45,7 @@ function grade() {
     $points++;
   }
 
-  echo  "<br><br> <b>Score in percent: " . ($points/5)*100 . "</b>";
+  echo  "<br><br> <b>Score: " . ($points/5)*100 . "%</b>";
 }
 
 echo grade();
