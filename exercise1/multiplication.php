@@ -6,7 +6,7 @@ function product($x, $y) {
     return $z;
 }
 
-function countNum()
+function firstRow()
 {
   //first row starting from 1 up to 100
   echo "<tr>";
@@ -16,7 +16,10 @@ function countNum()
     echo "<td>" . $i . "</td>";
   }
   echo "</tr>";
+}
 
+function multTable()
+{
   //print multipliction table from 1 to 100
   for ($i = 1; $i <= 100; $i++)
   {
@@ -35,6 +38,7 @@ function countNum()
 }
 
 echo "<table>";
-echo countNum();
+echo firstRow();
+echo multTable();
 echo "</table>";
 ?>
