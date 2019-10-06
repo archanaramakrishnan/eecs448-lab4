@@ -8,6 +8,16 @@ function product($x, $y) {
 
 function countNum()
 {
+  //first row starting from 1 up to 100
+  echo "<tr>";
+  echo "<td>&asp</td>";
+  for ($i = 1; $i <= 100; $i++)
+  {
+    echo "<td>" . $i . "</td>";
+  }
+  echo "</tr>";
+
+  //print multipliction table from 1 to 100
   for ($i = 1; $i <= 100; $i++)
   {
     echo "<tr>";
