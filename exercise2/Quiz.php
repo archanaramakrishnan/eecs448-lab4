@@ -8,9 +8,35 @@ function grade() {
   $a5 = $_POST["q5"];
 
 
-  echo "Q1: " . $a1 . "<br>";
 
+  echo "Q1: " . $a1 . "<br>";
   echo "Q2: " . $a2 . "<br>";
+
+  $points = 0;
+
+  echo "Question 1: What was the capital of Spain?.<br>";
+  if ($a1 == "7.5")
+  {
+    $points++;
+  }
+  if ($a1 == "7.5")
+  {
+    $points++;
+  }
+  if ($a1 == "7.5")
+  {
+    $points++;
+  }
+  if ($a1 == "7.5")
+  {
+    $points++;
+  }
+  if ($a1 == "7.5")
+  {
+    $points++;
+  }
+
+  echo $points;
 }
 
 echo grade();
