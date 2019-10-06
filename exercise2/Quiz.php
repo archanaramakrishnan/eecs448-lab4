@@ -1,29 +1,38 @@
 <?php
 
 function grade() {
-  $a1 = $_POST["q1"];
-  $a2 = $_POST["q2"];
-  $a3 = $_POST["q3"];
-  $a4 = $_POST["q4"];
-  $a5 = $_POST["q5"];
+  $a1 = $_POST["a1"];
+  $a2 = $_POST["a2"];
+  $a3 = $_POST["a3"];
+  $a4 = $_POST["a4"];
+  $a5 = $_POST["a5"];
 
+  echo "Question 1: Approximately, what is the population of planet Earth?";
+  echo "<br> You answered: " . $a1 . "<br>" . "Correct answer: 7.5 Billion";
 
+  echo "<br><br> Question 2: Approximately, what is the population of planet Earth?";
+  echo "<br> You answered: " . $a2 . "<br>" . "Correct answer: The Great Pyramid of Giza";
 
-  echo "Q1: " . $a1 . "<br>";
-  echo "Q2: " . $a2 . "<br>";
+  echo "<br><br> Question 3: Approximately, what is the population of planet Earth?";
+  echo "<br> You answered: " . $a3 . "<br>" . "Correct answer: Green";
+
+  echo "<br><br> Question 4: Approximately, what is the population of planet Earth?";
+  echo "<br> You answered: " . $a4 . "<br>" . "Correct answer: 7";
+
+  echo "<br><br> Question 5: Approximately, what is the population of planet Earth?";
+  echo "<br> You answered: " . $a5 . "<br>" . "Correct answer: Panda";
 
   $points = 0;
 
-  echo "Question 1: What was the capital of Spain?.<br>";
-  if ($a1 == "7.5")
+  if ($a1 == "7.5 Billion")
   {
     $points++;
   }
-  if ($a2 == "giza")
+  if ($a2 == "The Great Pyramid of Giza")
   {
     $points++;
   }
-  if ($a3 == "green")
+  if ($a3 == "Green")
   {
     $points++;
   }
@@ -31,12 +40,12 @@ function grade() {
   {
     $points++;
   }
-  if ($a5 == "panda")
+  if ($a5 == "Panda")
   {
     $points++;
   }
 
-  echo $points;
+  echo  "<br><br> <b>Score in percent: " . ($points/5)*100 . "</b>";
 }
 
 echo grade();
