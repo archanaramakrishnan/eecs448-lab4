@@ -19,19 +19,19 @@ function grade() {
   {
     $points++;
   }
-  if ($a1 == "7.5")
+  if ($a2 == "giza")
   {
     $points++;
   }
-  if ($a1 == "7.5")
+  if ($a3 == "green")
   {
     $points++;
   }
-  if ($a1 == "7.5")
+  if ($a4 == "7")
   {
     $points++;
   }
-  if ($a1 == "7.5")
+  if ($a5 == "panda")
   {
     $points++;
   }
