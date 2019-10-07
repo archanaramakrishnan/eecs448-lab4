@@ -7,15 +7,20 @@
 <body>
 
 <h3>Exercise 3</h3>
+<form action="/customerBackend.php" id="shopping" onsubmit="submit()">
+  Username:&nbsp;<input type="text" id="username"><br>
+  Password:&nbsp;&nbsp;<input type="password" id="userPassword"><br><br>
+  <p>Select shipping method:</p>
+    <input type="radio" name="ship" value="Free 7 day"> Free 7 day<br>
+    <input type="radio" name="ship" value="$50.00 over night"> $50.00 over night<br>
+    <input type="radio" name="ship" value="$5.00 three day"> $5.00 three day<br><br>
 
-<p>Username: </p><input type="text" id="username"><br>
-<p>Password: </p><input type="password" id="userPassword"><br><br>
-<p>Select shipping method:</p>
-  <input type="radio" name="ship" value="Free 7 day"> Free 7 day<br>
-  <input type="radio" name="ship" value="$50.00 over night"> $50.00 over night<br>
-  <input type="radio" name="ship" value="$5.00 three day"> $5.00 three day<br> 
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
 
-<button onclick="passwordValidation()">Validate</button>
+
+
 
 </body>
 </html>
