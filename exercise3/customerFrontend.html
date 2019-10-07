@@ -2,6 +2,8 @@
 <html>
 <head>
   <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -10,6 +12,14 @@
 <form action="/customerBackend.php" id="shopping" onsubmit="submit()">
   Username:&nbsp;<input type="text" id="username"><br>
   Password:&nbsp;&nbsp;<input type="password" id="userPassword"><br><br>
+
+  <p>Specify quantities of the items you would like to purchase:</p>
+    <input type="number" name="quantity" min="0" name="Pair of Scissors"> Pair of Scissors<br>
+    <input type="number" name="quantity" min="0" name="Elmer's Glue"> Elmer's Glue<br>
+    <input type="number" name="quantity" min="0" name="Construction Paper"> Construction Paper<br>
+    <input type="number" name="quantity" min="0" name="Sticky Notes"> Sticky Notes<br>
+    <input type="number" name="quantity" min="0" name="Tape"> Tape<br><br>
+
   <p>Select shipping method:</p>
     <input type="radio" name="ship" value="Free 7 day"> Free 7 day<br>
     <input type="radio" name="ship" value="$50.00 over night"> $50.00 over night<br>
