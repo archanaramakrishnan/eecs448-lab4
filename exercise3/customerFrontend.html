@@ -9,16 +9,16 @@
 <body>
 
 <h3>Exercise 3</h3>
-<form action="/customerBackend.php" id="shopping" onsubmit="submit()">
+<form action="/customerBackend.php" name="shopping" onsubmit="submit()">
   Username:&nbsp;<input type="text" id="username"><br>
   Password:&nbsp;&nbsp;<input type="password" id="userPassword"><br><br>
 
   <p>Specify quantities of the items you would like to purchase:</p>
-    <input type="number" name="quantity" min="0" name="Pair of Scissors"> Pair of Scissors<br>
-    <input type="number" name="quantity" min="0" name="Elmer's Glue"> Elmer's Glue<br>
-    <input type="number" name="quantity" min="0" name="Construction Paper"> Construction Paper<br>
-    <input type="number" name="quantity" min="0" name="Sticky Notes"> Sticky Notes<br>
-    <input type="number" name="quantity" min="0" name="Tape"> Tape<br><br>
+    <input type="number" name="quantity" min="0" value="0" name="Pair of Scissors"> Pair of Scissors, $3. 99<br>
+    <input type="number" name="quantity" min="0" value="0" name="Elmer's Glue"> Elmer's Glue, $5. 00<br>
+    <input type="number" name="quantity" min="0" value="0" name="Construction Paper"> Construction Paper (480 count, 10 colors), $14. 99<br>
+    <input type="number" name="quantity" min="0" value="0" name="Sticky Notes"> Post-It Notes (400 sheets), $3. 88<br>
+    <input type="number" name="quantity" min="0" value="0" name="Tape"> Tape (Pack of 6), $8. 99<br><br>
 
   <p>Select shipping method:</p>
     <input type="radio" name="ship" value="Free 7 day"> Free 7 day<br>
