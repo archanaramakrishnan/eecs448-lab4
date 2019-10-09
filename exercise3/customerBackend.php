@@ -1,12 +1,14 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 <?php
 
 function welcome() {
   $username = $_POST["username"];
   $password = $_POST["userPassword"];
 
-  echo "Welcome " . $username . "!<br>";
-  echo "Password: " . $password . "<br>";
-  echo "<br> Chosen shipping method: " . $shippingMethod . "<br><br>";
+  echo "<h3>Welcome " . $username . "!</h3>";
+  echo "<h3>Password: " . $password . "</h3><br>";
+  echo "<h4>Receipt: <h4><br>";
 }
 
 function receipt() {
@@ -74,6 +76,7 @@ function receipt() {
   echo "<tr>";
   echo "<td>" . "Shipping Cost" . "</td>";
   echo "<td>" . $shippingMethod . "</td>";
+  echo "<td>" . "&nbsp" . "</td>";
   echo "<td>$" . $shippingCost . "</td>";
   echo "</tr>";
   echo "</table>";

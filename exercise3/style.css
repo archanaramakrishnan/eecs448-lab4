@@ -1,4 +1,19 @@
-input[name=quantity] {
+input[class=quantity] {
   width: 2%;
   padding: 10px 5px;
+}
+
+table {
+  text-align: center;
+  background-color: lightblue;
+  color: black;
+  border: 1px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+h1 {
+  color: blue;
 }
