@@ -1,13 +1,12 @@
 <?php
 
 function welcome() {
-  $shippingMethod = $_POST["ship"];
   $username = $_POST["username"];
   $password = $_POST["userPassword"];
 
   echo "Welcome " . $username . "!<br>";
   echo "Password: " . $password . "<br>";
-  echo "<br> Chosen shipping method: " . $shippingMethod . "<br>";
+  echo "<br> Chosen shipping method: " . $shippingMethod . "<br><br>";
 }
 
 function receipt() {
@@ -16,6 +15,18 @@ function receipt() {
   $quantity3 = $_POST["ConstructionPaper"];
   $quantity4 = $_POST["StickyNotes"];
   $quantity5 = $_POST["Tape"];
+
+  $shippingMethod = $_POST["ship"];
+  $shippingCost=0;
+
+  if ($shippingMethod == "$50.00 over night")
+  {
+    $shippingCost=50;
+  }
+  if ($shippingMethod == "$5.00 three day")
+  {
+    $shippingCost=5;
+  }
 
   echo "<table>";
   echo "<tr>";
@@ -58,6 +69,12 @@ function receipt() {
   echo "<td>" . $quantity5 . "</td>";
   echo "<td>" . "$8.99" . "</td>";
   echo "<td>$" . 8.99*$quantity5 . "</td>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td>" . "Shipping Cost" . "</td>";
+  echo "<td>" . $shippingMethod . "</td>";
+  echo "<td>$" . $shippingCost . "</td>";
   echo "</tr>";
   echo "</table>";
 }
