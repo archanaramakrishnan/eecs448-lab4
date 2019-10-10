@@ -81,7 +81,7 @@ function receipt() {
 
   echo "<tr>";
   echo '<td colspan="3"><strong>' . "Total Cost" . "</strong></td>";
-  echo "<td>$" . (3.99*$quantity1+5.00*$quantity2+14.99*$quantity3+3.88*$quantity4+8.99*$quantity5) . "</td>";
+  echo "<td>$" . ((3.99*$quantity1)+(5.00*$quantity2)+(14.99*$quantity3)+(3.88*$quantity4)+(8.99*$quantity5)+$shippingCost) . "</td>";
   echo "</tr>";
   echo "</table>";
 }
