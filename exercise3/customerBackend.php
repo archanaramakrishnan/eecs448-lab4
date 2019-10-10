@@ -6,6 +6,7 @@ function welcome() {
   $username = $_POST["username"];
   $password = $_POST["userPassword"];
 
+  echo "<h1>School Supplies Shopping</h1>";
   echo "<h3>Welcome " . $username . "!</h3>";
   echo "<h3>Password: " . $password . "</h3>";
   echo "<h4>Thank you for shopping with us! Here's your Receipt: <h4>";
@@ -28,6 +29,10 @@ function receipt() {
   if ($shippingMethod == "$5.00 three day")
   {
     $shippingCost=5;
+  }
+  if ($quantity1 == 0 && $quantity2 == 0 && $quantity3 == 0 && $quantity4 == 0 && $quantity5 == 0)
+  {
+    $shippingCost=0;
   }
 
   echo "<table>";
