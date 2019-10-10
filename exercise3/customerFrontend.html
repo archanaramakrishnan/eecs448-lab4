@@ -8,18 +8,22 @@
 
 <body>
 
-<h3>Exercise 3</h3>
+<h1>Exercise 3: Web Store</h1>
 <form id="shopping" action="customerBackend.php" method="post" onsubmit="validate()">
   Username:&nbsp;<input type="email" name="username" id="username"><br>
   Password:&nbsp;&nbsp;<input type="password" name="userPassword" id="userPassword"><br><br>
 
   <p>Specify quantities of the items you would like to purchase:</p>
-    <input type="number" class="quantity" min="0" value="0" id="PairOfScissors" name="PairOfScissors"> Pair of Scissors, $3. 99<br>
-    <input type="number" class="quantity" min="0" value="0" id="ElmersGlue" name="ElmersGlue"> Elmer's Glue, $5. 00<br>
-    <input type="number" class="quantity" min="0" value="0" id="ConstructionPaper" name="ConstructionPaper"> Construction Paper (480 count, 10 colors), $14. 99<br>
-    <input type="number" class="quantity" min="0" value="0" id="StickyNotes" name="StickyNotes"> Post-It Notes (400 sheets), $3. 88<br>
-    <input type="number" class="quantity" min="0" value="0" id="Tape" name="Tape"> Tape (Pack of 6), $8. 99<br><br>
-
+  <div align="center">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="number" class="quantity" min="0" value="0" id="PairOfScissors" name="PairOfScissors"> Pair of Scissors, $3. 99<br>
+  <input type="number" class="quantity" min="0" value="0" id="ElmersGlue" name="ElmersGlue"> Elmer's Glue, $5. 00<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="number" class="quantity" min="0" value="0" id="ConstructionPaper" name="ConstructionPaper"> Construction Paper, $14. 99<br>
+  <input type="number" class="quantity" min="0" value="0" id="StickyNotes" name="StickyNotes"> Post-It Notes, $3. 88<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="number" class="quantity" min="0" value="0" id="Tape" name="Tape"> &nbsp;Tape (Pack of 6), $8. 99<br><br>
+</div>
   <p>Select shipping method:</p>
     <input type="radio" name="ship" value="Free 7 day"> Free 7 day<br>
     <input type="radio" name="ship" value="$50.00 over night"> $50.00 over night<br>
