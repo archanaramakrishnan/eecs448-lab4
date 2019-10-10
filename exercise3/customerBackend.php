@@ -7,8 +7,8 @@ function welcome() {
   $password = $_POST["userPassword"];
 
   echo "<h3>Welcome " . $username . "!</h3>";
-  echo "<h3>Password: " . $password . "</h3><br>";
-  echo "<h4>Receipt: <h4><br>";
+  echo "<h3>Password: " . $password . "</h3>";
+  echo "<h4>Thank you for shopping with us! Here's your Receipt: <h4>";
 }
 
 function receipt() {
@@ -33,51 +33,55 @@ function receipt() {
   echo "<table>";
   echo "<tr>";
   echo "<td>" . "&nbsp" . "</td>";
-  echo "<td>" . "Quantity" . "</td>";
-  echo "<td>" . "Cost Per Item" . "</td>";
-  echo "<td>" . "Sub Total" . "</td>";
+  echo "<td><strong>" . "Quantity" . "</strong></td>";
+  echo "<td><strong>" . "Cost Per Item" . "</strong></td>";
+  echo "<td><strong>" . "Sub Total" . "</strong></td>";
   echo "</tr>";
 
   echo "<tr>";
-  echo "<td>" . "Pair of Scissors" . "</td>";
+  echo "<td><strong>" . "Pair of Scissors" . "</strong></td>";
   echo "<td>" . $quantity1 . "</td>";
   echo "<td>" . "$3.99" . "</td>";
   echo "<td>$" . 3.99*$quantity1 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-  echo "<td>" . "Elmer's Glue" . "</td>";
+  echo "<td><strong>" . "Elmer's Glue" . "</strong></td>";
   echo "<td>" . $quantity2 . "</td>";
   echo "<td>" . "$5.00" . "</td>";
   echo "<td>$" . 5.00*$quantity2 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-  echo "<td>" . "Construction Paper" . "</td>";
+  echo "<td><strong>" . "Construction Paper" . "</strong></td>";
   echo "<td>" . $quantity3 . "</td>";
   echo "<td>" . "$14.99" . "</td>";
   echo "<td>$" . 14.99*$quantity3 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-  echo "<td>" . "Post-It Notes" . "</td>";
+  echo "<td><strong>" . "Post-It Notes" . "</strong></td>";
   echo "<td>" . $quantity4 . "</td>";
   echo "<td>" . "$3.88" . "</td>";
   echo "<td>$" . 3.88*$quantity4 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-  echo "<td>" . "Tape" . "</td>";
+  echo "<td><strong>" . "Tape" . "</strong></td>";
   echo "<td>" . $quantity5 . "</td>";
   echo "<td>" . "$8.99" . "</td>";
   echo "<td>$" . 8.99*$quantity5 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-  echo "<td>" . "Shipping Cost" . "</td>";
-  echo "<td>" . $shippingMethod . "</td>";
-  echo "<td>" . "&nbsp" . "</td>";
+  echo "<td><strong>" . "Shipping Cost" . "</strong></td>";
+  echo '<td colspan="2">' . $shippingMethod . "</td>";
   echo "<td>$" . $shippingCost . "</td>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo '<td colspan="3"><strong>' . "Total Cost" . "</strong></td>";
+  echo "<td>$" . (3.99*$quantity1+5.00*$quantity2+14.99*$quantity3+3.88*$quantity4+8.99*$quantity5) . "</td>";
   echo "</tr>";
   echo "</table>";
 }
